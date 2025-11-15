@@ -1,0 +1,92 @@
+body {
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url("loginpagebg.png");
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #8F6E50;
+    border-radius: 6px;
+    box-sizing: border-box;  
+}
+
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    color: #2F4F4F;    /* Forest Green */
+    margin-bottom: 20px;
+}
+
+
+form {
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #E5D5C2;
+    border-radius: 10px;
+    border: 2px solid #2F4F4F;  
+}
+
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #8F6E50;
+    border-radius: 6px;
+}
+
+
+.login {
+    width: 100%;
+    height: 42px;
+    background-color: #2F4F4F;   
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #234040;   
+}
+
+
+.forgot {
+    color: #2F4F4F;   
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.line {
+    border: none;
+    border-top: 1px solid #BFA387;
+    margin-bottom: 15px;
+}
+
+
+.create-btn {
+    width: 180px;
+    height: 40px;
+    background-color: #D4A574; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #B98C5E;
+}
