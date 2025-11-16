@@ -1,7 +1,9 @@
 
-* { box-sizing: border-box; }
-html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow-x: hidden; }
-
+* { box-sizing: border-box; 
+  }
+html, body {
+   width: 100%; height: 100%; margin: 0; padding: 0; overflow-x: hidden;
+   }
 
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, 'Poppins', sans-serif;
@@ -9,7 +11,6 @@ body {
   color: #5E5347; 
   -webkit-font-smoothing: antialiased;
 }
-
 
 .sidebar {
   position: fixed;
@@ -33,8 +34,10 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.sidebar .icon:hover { background:#F2E8DA; transform: scale(1.08); }
 
+.sidebar .icon:hover { 
+  background:#F2E8DA; transform: scale(1.08); 
+  }
 
 .header {
   position: fixed;
@@ -58,8 +61,10 @@ body {
   margin-right: 6px;
 }
 
+.search-box { 
+  flex: 1; max-width: calc(100% - 140px); 
+  }
 
-.search-box { flex: 1; max-width: calc(100% - 140px); }
 .search-box input {
   width: 100%;
   padding: 12px 18px;
@@ -68,7 +73,6 @@ body {
   background: #F3F1EC;
   outline: none;
 }
-
 
 .profile img {
   width: 44px;
@@ -79,13 +83,11 @@ body {
   cursor: pointer;
 }
 
-
 .main-content {
   margin-left: 70px;   
   margin-top: 96px;    
   padding: 20px 40px 80px 40px;
 }
-
 
 .top-row {
   display: flex;
@@ -94,7 +96,10 @@ body {
   justify-content: space-between;
 }
 
-.left-head { max-width: 900px; }
+.left-head { 
+  max-width: 900px; 
+  }
+  
 .page-title {
   font-family: 'Playfair Display', serif;
   color: #4A3F35;

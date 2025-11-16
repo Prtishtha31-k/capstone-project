@@ -1,9 +1,7 @@
 body {
     margin: 0;
-    
     background: #F3F1EC;   
 }
-
 
 .sidebar {
     position: fixed;
@@ -33,7 +31,6 @@ body {
     transform: scale(1.15);
 }
 
-
 .header {
     position: fixed;
     top: 0;
@@ -56,7 +53,6 @@ body {
     margin-right: 15px;
 }
 
-
 .search-box {
     width: 80%;    
 }
@@ -78,7 +74,6 @@ body {
     border: 1px solid #C9B9A5;
 }
 
-
 .grid-container {
     margin-top: 110px;
     margin-left: 100px;  
@@ -97,19 +92,16 @@ body {
     transition: 0.35s ease;
 }
 
-
 .grid-item:hover {
     transform: scale(1.04);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
     z-index: 2;
 }
 
-
 @media(max-width: 1200px) { .grid-container { column-count: 4; } }
 @media(max-width: 900px) { .grid-container { column-count: 3; } }
 @media(max-width: 600px) { .grid-container { column-count: 2; } }
 @media(max-width: 400px) { .grid-container { column-count: 1; } }
-
 
 .profile {
     margin-left: auto;

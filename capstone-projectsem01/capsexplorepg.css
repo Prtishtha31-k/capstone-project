@@ -32,8 +32,6 @@ body {
     transform: scale(1.15);
 }
 
-
-
 .header {
     position: fixed;
     top: 0;
@@ -160,8 +158,6 @@ body {
         font-size: 22px;
     }
 }
-
-
 
 @media(max-width: 1200px) { .grid { column-count: 3; } }
 @media(max-width: 800px) { .grid { column-count: 2; } }

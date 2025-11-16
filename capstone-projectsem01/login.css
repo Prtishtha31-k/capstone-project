@@ -15,14 +15,12 @@ body {
     box-sizing: border-box;  
 }
 
-
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     color: #2F4F4F;    
     margin-bottom: 20px;
 }
-
 
 form {
     margin: auto;
@@ -33,7 +31,6 @@ form {
     border: 2px solid #2F4F4F;  
 }
 
-
 .input {
     width: 100%;
     padding: 12px;
@@ -41,7 +38,6 @@ form {
     border: 1px solid #8F6E50;
     border-radius: 6px;
 }
-
 
 .login {
     width: 100%;
@@ -59,7 +55,6 @@ form {
     background-color: #234040;   
 }
 
-
 .forgot {
     color: #2F4F4F;   
     font-size: 12px;
@@ -68,13 +63,11 @@ form {
     margin-bottom: 15px;
 }
 
-
 .line {
     border: none;
     border-top: 1px solid #BFA387;
     margin-bottom: 15px;
 }
-
 
 .create-btn {
     width: 180px;
