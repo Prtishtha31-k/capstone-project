@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    
     background: #F3F1EC;   
 }
 
@@ -51,7 +51,7 @@ body {
 
 .logo {
     font-size: 32px;
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
     color: #2F4F4F;
     margin-right: 15px;
 }

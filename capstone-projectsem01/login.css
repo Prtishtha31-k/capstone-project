@@ -2,7 +2,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-image: url("loginpagebg.png");
-    font-family: Arial, sans-serif;
+    
     text-align: center;
     padding-top: 40px;
 }
@@ -17,9 +17,9 @@ body {
 
 
 .logo {
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
-    color: #2F4F4F;    /* Forest Green */
+    color: #2F4F4F;    
     margin-bottom: 20px;
 }
 

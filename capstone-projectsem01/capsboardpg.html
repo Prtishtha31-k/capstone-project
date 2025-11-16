@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ÒRME — Your Saved Ideas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capsboardpg.css">
+</head>
+<body>
+
+  
+  <aside class="sidebar" aria-hidden="true">
+    <div class="icon">🏠</div>
+    <div class="icon">🔍</div>
+    <div class="icon">📌</div>
+    <div class="icon">➕</div>
+    <div class="icon">🔔</div>
+    <div class="icon">⚙️</div>
+  </aside>
+
+
+  <header class="header">
+    <h1 class="logo">ÒRME</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search your Pins..." aria-label="Search">
+    </div>
+
+    <div class="profile">
+      <img src="https://i.pravatar.cc/300" alt="profile">
+    </div>
+  </header>
+
+
+  <main class="main-content">
+
+
+    <section class="top-row">
+      <div class="left-head">
+        <h2 class="page-title">Your saved ideas</h2>
+
+
+        <div class="tabs" role="tablist" aria-label="Saved tabs">
+          <button class="tab active" data-tab="pins">Pins</button>
+          <button class="tab" data-tab="boards">Boards</button>
+          <button class="tab" data-tab="collages">Collages</button>
+        </div>
+
+
+        <div class="chips">
+          <button class="chip">★ Favourites</button>
+          <button class="chip">Created by you</button>
+        </div>
+      </div>
+
+     
+    </section>
+
+   
+    <section id="pins" class="pins-grid">
+      
+      <article class="pin">
+        <img src="https://www.thoughtco.com/thmb/-TPWXOYE2P166_exm-iHi8rJT4w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/nizwa-mosque--nizwa--oman---february-28--2016-911295320-5b6a58cb46e0fb002c0c91eb.jpg" alt="pin">
+        <div class="pin-meta">
+          <div class="pin-dots">•••</div>
+        </div>
+      </article>
+
+      <article class="pin">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=60&auto=format&fit=crop" alt="pin">
+        <div class="pin-meta"><div class="pin-dots">•••</div></div>
+      </article>
+
+      <article class="pin">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=60&auto=format&fit=crop" alt="pin">
+        <div class="pin-meta"><div class="pin-dots">•••</div></div>
+      </article>
+
+      <article class="pin">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=60&auto=format&fit=crop" alt="pin">
+        <div class="pin-meta"><div class="pin-dots">•••</div></div>
+      </article>
+
+   
+    </section>
+
+    
+    <section id="boards" class="boards-grid hidden">
+      <div class="board-card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&q=60&auto=format&fit=crop" alt="">
+        <div class="board-title">Europe Trip Ideas</div>
+      </div>
+
+      <div class="board-card">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=60&auto=format&fit=crop" alt="">
+        <div class="board-title">Hotels & Stays</div>
+      </div>
+
+      <div class="board-card">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=60&auto=format&fit=crop" alt="">
+        <div class="board-title">Itineraries</div>
+      </div>
+    </section>
+
+    
+    <section id="collages" class="collages-grid hidden">
+      <div class="collage-placeholder">No collages yet — create one!</div>
+    </section>
+
+  </main>
+
+  <script>
+    
+    const tabs = document.querySelectorAll('.tab');
+    const sections = { pins: document.getElementById('pins'), boards: document.getElementById('boards'), collages: document.getElementById('collages') };
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.tab.active').classList.remove('active');
+        btn.classList.add('active');
+        
+        Object.values(sections).forEach(s => s.classList.add('hidden'));
+       
+        const key = btn.getAttribute('data-tab');
+        sections[key].classList.remove('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
