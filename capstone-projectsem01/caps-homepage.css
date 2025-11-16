@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #F3F1EC;   
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 100vh;
+    background: #ffffff;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    border-right: 1px solid #e5d8c8;
+}
+
+.sidebar .icon {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.sidebar .icon:hover {
+    background: #F2E8DA;
+    transform: scale(1.15);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    right: 0;
+    background: #ffffff;
+    padding: 18px 18px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #e5d8c8;
+    z-index: 10;
+    height:45px;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+    color: #2F4F4F;
+    margin-right: 15px;
+}
+
+
+.search-box {
+    width: 80%;    
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    background: #F3F1EC;
+    font-size: 16px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: 0.25s;
+}
+
+.search-box input:focus {
+    background: #ffffff;
+    border: 1px solid #C9B9A5;
+}
+
+
+.grid-container {
+    margin-top: 110px;
+    margin-left: 100px;  
+    column-count: 5;
+    column-gap: 18px;
+    padding-right: 32px;
+}
+
+.grid-item {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    display: block;
+    background: #DDD5C8;      
+    break-inside: avoid;
+    transition: 0.35s ease;
+}
+
+
+.grid-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+
+@media(max-width: 1200px) { .grid-container { column-count: 4; } }
+@media(max-width: 900px) { .grid-container { column-count: 3; } }
+@media(max-width: 600px) { .grid-container { column-count: 2; } }
+@media(max-width: 400px) { .grid-container { column-count: 1; } }
+
+
+.profile {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.profile img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.25s ease;
+    border: 2px solid #e5d8c8;
+}
+
+.profile img:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
