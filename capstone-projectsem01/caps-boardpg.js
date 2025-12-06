@@ -1,4 +1,3 @@
-
 const tabs = document.querySelectorAll('.tab');
 const sections = {
   pins: document.getElementById('pins'),
