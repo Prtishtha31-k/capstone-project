@@ -102,23 +102,7 @@
 
   </main>
 
-  <script>
-    
-    const tabs = document.querySelectorAll('.tab');
-    const sections = { pins: document.getElementById('pins'), boards: document.getElementById('boards'), collages: document.getElementById('collages') };
-
-    tabs.forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelector('.tab.active').classList.remove('active');
-        btn.classList.add('active');
-        
-        Object.values(sections).forEach(s => s.classList.add('hidden'));
-       
-        const key = btn.getAttribute('data-tab');
-        sections[key].classList.remove('hidden');
-      });
-    });
-  </script>
+  <script src="./caps-boardpg.js"></script>
 
 </body>
 </html>

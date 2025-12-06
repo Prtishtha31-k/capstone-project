@@ -88,7 +88,7 @@ body {
     margin-bottom: 15px;
     display: block;
     background: #DDD5C8;      
-    break-inside: avoid;
+    
     transition: 0.35s ease;
 }
 
@@ -121,4 +121,9 @@ body {
 .profile img:hover {
     transform: scale(1.12);
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+
+.active-icon {
+    background: #F2E8DA;
+    transform: scale(1.2);
 }
