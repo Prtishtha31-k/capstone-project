@@ -1,4 +1,4 @@
-# (ORMÈ)capstone-project 
+# (ÒRME)capstone-project 
 semester-01 , SnW Capstone Project
 
 
